@@ -18,3 +18,17 @@ libcjson_utils.so.*
 cmake-build-debug
 *.lst
 *.lss
+
+
+# Added by Pallab
+library_config/
+fuzzing/afl-prepare-linux.sh
+fuzzing/CMakeLists.txt
+fuzzing/afl.sh
+fuzzing/ossfuzz.sh
+.travis.yml
+appveyor.yml
+CMakeLists.txt
+Makefile
+test.c
+valgrind.supp
