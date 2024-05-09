@@ -3,6 +3,10 @@ AC_PREREQ(2.53)
 dnl Initialization
 AC_INIT([cJSON], [1.7.17], [pallab.sutradhar@upm.es])
 
+dnl Donot forget to do this part
+dnl If we donot do this, in the Makefile.am the $(PACKAGE) becomes "cjson" instead of "cJSON"
+AC_SUBST([PACKAGE_NAME], [cJSON])
+
 
 dnl Put as most as possible configuration files to an auxialiry directory.
 AC_CONFIG_AUX_DIR([autoconf])
@@ -24,6 +28,8 @@ dnl AM_PROG_AR ensures that the ar program is available in the build environment
 AM_PROG_AR
 AC_PROG_MAKE_SET
 AC_PROG_INSTALL
+
+dnl AM_ENABLE_AUTOMATIC_DEPENDENCIES
 
 dnl Checks for libraries.
 dnl (None specified, but here is where you would check for libraries)
@@ -55,9 +61,15 @@ AC_SUBST(abs_top_srcdir)
 AX_CREATE_PKGCONFIG_INFO
 
 dnl Configure Makefiles.
-AC_CONFIG_FILES([
-	Makefile
-	],
-	[test -z "$CONFIG_HEADERS" || echo timestamp > stamp-h.in])
+AC_CONFIG_FILES(
+	[Makefile]
+)
 
 AC_OUTPUT
+
+echo "             /*-----------------------------------------------*"
+echo "              *           cJSON configuration is OK            *"
+echo "              *-----------------------------------------------*/"
+echo "It appears that your system is OK to start cJSON compilation."
+echo "Pluto will treat cJSON as submodule/lib."
+
