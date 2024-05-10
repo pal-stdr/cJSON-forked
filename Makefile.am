@@ -50,12 +50,12 @@ DISTCLEANFILES = \
 
 
 
-# This hook handles the dumping process in "--prefix=" path
-# $(PACKAGE_NAME)=cJSON
-# "cJSON.h, cJSON_Utils.h" goes to "prefix/include/cJSON/" dir (a.k.a "includedir=")
-# And "libcJSON.la" goes to "prefix/lib"
-# $(libdir)=prefix/lib
-# Ensures the "libcJSON.la" goes/installed into the "prefix/lib/" folder
+# # This hook handles the dumping process in "--prefix=" path
+# # $(PACKAGE_NAME)=cJSON
+# # "cJSON.h, cJSON_Utils.h" goes to "prefix/include/cJSON/" dir (a.k.a "includedir=")
+# # And "libcJSON.la" goes to "prefix/lib"
+# # $(libdir)=prefix/lib
+# # Ensures the "libcJSON.la" goes/installed into the "prefix/lib/" folder
 install-data-local:
 	@echo "Headers will be installed to: $(includedir)"
 	@echo "Printing PACKAGE_NAME= $(PACKAGE_NAME) & libdir=$(libdir)"
@@ -63,14 +63,14 @@ install-data-local:
 
 
 
-# This also works
-# "install-data-local" make sures
-# "cJSON.h, cJSON_Utils.h" goes to "prefix/include/cJSON/" dir
-# And "libcJSON.la" goes to "prefix/lib"
-# $(libdir)=prefix/lib
-# Ensures the "libcJSON.la" goes/installed into the "installation/lib/" folder
-# $(PACKAGE_NAME)=cJSON
-# $(includedir)=prefix/include
+# # This also works
+# # "install-data-local" make sures
+# # "cJSON.h, cJSON_Utils.h" goes to "prefix/include/cJSON/" dir
+# # And "libcJSON.la" goes to "prefix/lib"
+# # $(libdir)=prefix/lib
+# # Ensures the "libcJSON.la" goes/installed into the "installation/lib/" folder
+# # $(PACKAGE_NAME)=cJSON
+# # $(includedir)=prefix/include
 # install-data-local:
 # 	@echo "Headers will be installed to: $(includedir)"
 # 	$(mkdir_p) $(includedir)/$(PACKAGE_NAME)
