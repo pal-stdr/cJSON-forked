@@ -71,5 +71,5 @@ echo "             /*-----------------------------------------------*"
 echo "              *           cJSON configuration is OK            *"
 echo "              *-----------------------------------------------*/"
 echo "It appears that your system is OK to start cJSON compilation."
-echo "Pluto will treat cJSON as submodule/lib."
+echo "PPCG will treat cJSON as submodule/lib."
 
