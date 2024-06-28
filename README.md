@@ -2,6 +2,8 @@
 
 Ultralightweight JSON parser in ANSI C.
 
+# For [PPCG](https://repo.or.cz/ppcg.git) (added by Pallab), Please check the [Readme here](Docs/pallab/README.md)
+
 ## Table of contents
 * [License](#license)
 * [Usage](#usage)

@@ -1,0 +1,11 @@
+# Additional License Terms
+
+The source code originally developed by [cJSON](https://github.com/DaveGamble/cJSON) is licensed under its existing [LICENSE](LICENSE) file.
+
+## Modifications License
+The modifications and additions made in this fork are licensed under the following terms:
+
+### GNU General Public License v3.0
+All modifications, enhancements, and additional code in this project are free software: you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+These modifications are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.html) for more details.
