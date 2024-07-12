@@ -1,11 +1,11 @@
 AC_PREREQ(2.53)
 
 dnl Initialization
-AC_INIT([cJSON], [1.7.18], [pallab.sutradhar@upm.es])
+AC_INIT([cjson], [1.7.18], [pallab.sutradhar@upm.es])
 
 dnl Donot forget to do this part
-dnl If we donot do this, in the Makefile.am the $(PACKAGE) becomes "cjson" instead of "cJSON"
-AC_SUBST([PACKAGE_NAME], [cJSON])
+dnl substitute $(PACKAGE_NAME) variable with "cjson" (not "cJSON")
+AC_SUBST([PACKAGE_NAME], [cjson])
 
 
 dnl Put as most as possible configuration files to an auxialiry directory.
